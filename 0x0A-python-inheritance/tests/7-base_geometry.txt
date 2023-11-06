@@ -1,0 +1,79 @@
+ 7-base_geometry test file
+
+
+Using integer_validator function
+
+
+
+1-my_list.txt >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+1-my_list.txt >>> bg = BaseGeometry()
+1-my_list.txt >>> bg.integer_validator(my_int, 12)
+1-my_list.txt >>> bg.integer_validator(width, 89)
+1-my_list.txt >>> bg.integer_validator(name, John)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
+1-my_list.txt >>> bg.integer_validator(float_n, 5.23)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: float_n must be an integer
+1-my_list.txt >>> bg.integer_validator(float_n, float(inf))
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: float_n must be an integer
+1-my_list.txt >>> bg.integer_validator(float_n, float(-inf))
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: float_n must be an integer
+1-my_list.txt >>> bg.integer_validator(boolean, True)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: boolean must be an integer
+1-my_list.txt >>> bg.integer_validator(age, 0)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt ValueError: age must be greater than 0
+1-my_list.txt >>> bg.integer_validator(distance, -4)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt ValueError: distance must be greater than 0
+1-my_list.txt >>> bg.integer_validator(missing1)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: integer_validator() missing 1 required positional argument: 'value'
+1-my_list.txt >>> bg.integer_validator()
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+1-my_list.txt >>> bg.integer_validator(name, None)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
+1-my_list.txt >>> bg.area()
+1-my_list.txt Traceback (most recent call last):
+1-my_list.txt ...
+1-my_list.txt Exception: area() is not implemented
+1-my_list.txt >>> bg.area(aaa)
+1-my_list.txt Traceback (most recent call last):
+1-my_list.txt ...
+1-my_list.txt TypeError: area() takes 1 positional argument but 2 were given
+1-my_list.txt >>> bg.integer_validator(name, 2+5j)
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
+1-my_list.txt >>> bg.integer_validator(name, [1, 2])
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
+1-my_list.txt >>> bg.integer_validator(name, (1, 2))
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
+1-my_list.txt >>> bg.integer_validator(name, {a: 8})
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
+1-my_list.txt >>> bg.integer_validator(name, {2, 8})
+1-my_list.txt Traceback (most recent call last):
+        ...
+1-my_list.txt TypeError: name must be an integer
