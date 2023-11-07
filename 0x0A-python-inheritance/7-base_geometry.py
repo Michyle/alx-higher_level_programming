@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Defines the class BaseGeometry"""
 
-class Base Geometry:
+class BaseGeometry:
     """Class body"""
 
-    def area)(Self):
+    def area(Self):
         """Not implemented"""
         raise Exception("area() is not implemented")
 
@@ -16,4 +16,4 @@ class Base Geometry:
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise Vlaue("{} must be greater then 0".format(name))
+            raise ValueError("{} must be greater then 0".format(name))

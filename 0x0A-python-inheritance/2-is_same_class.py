@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This Returns the instance of a specific class"""
 
-def is_same_class(obj, a class):
+def is_same_class(obj, a_class):
     """Check if an object is an instance of a given class.
     Args:
         obj (any): The object to check.
@@ -9,6 +9,6 @@ def is_same_class(obj, a class):
     Returns:
         Boolean of an instance of a_class.
     """
-    if typr(obj) == a_class:
+    if type(obj) == a_class:
         return True
     return False
