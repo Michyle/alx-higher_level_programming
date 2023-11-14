@@ -56,7 +56,7 @@ class Rectangle(Base):
         """
             Setting private attribute (__y)
         """
-        self.setter_vlidation("y", value)
+        self.setter_validation("y", value)
         self.__y = value
 
     def area(self):
