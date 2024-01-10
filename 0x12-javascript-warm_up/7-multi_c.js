@@ -5,7 +5,7 @@ if (process.argv[2] === undefined || isNaN(process.argv[2])) {
 	const x = Number(process.argv[2]);
 	let i = 0;
 	while (i < x) {
-		cosole.log(C is fun');
+		cosole.log('C is fun');
 		i++;
 	}
 }
