@@ -1,4 +1,4 @@
-$!/usr/bin/node
+#!/usr/bin/node
 
 class Rectangle {
 	constructor (w, h) {
@@ -14,7 +14,7 @@ class Rectangle {
 		}
 	}
 
-	roat () {
+	rotate () {
 		[this.width, this.height] = [this.height, this.width];
 	}
 
